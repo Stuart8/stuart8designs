@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Stuart8Designs | Web Design and Development | Aberdeen UK</title>
+    <meta name="description" content="Stuart Dalgarno's portfolio website. I am based in Aberdeen UK. I am studying web design and development.">
+    <meta name="keywords" content="HTML,CSS,Portfolio,JavaScript,Stuart,Stuart8Designs,Stuart Dalgarno,">
+    <meta name="author" content="Stuart Dalgarno">
+    <meta name="viewport" content="width=device-width">
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" integrity="sha256-h0cGsrExGgcZtSZ/fRz4AwV+Nn6Urh/3v3jFRQ0w9dQ=" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<!--CSS style sheets-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/all.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!--/CSS style sheets-->
+    <link href="https://fonts.googleapis.com/css?family=K2D%7CPhilosopher%7CKoHo%7CDancing+Script%7CRoboto+Condensed%7CGamja+Flower%7CRoboto:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="pre-con">
+        <div id="loader">
+        </div>
+    </div>
+    
+<!--Page wrapper-->
+    <div class="wrapper">
+<!--Socials Links-->
+        <div class="followme">
+
+            <div id="dribbble-cont">
+                
+                <a id="dribbble" href="https://dribbble.com/"><i class="fab fa-dribbble-square"></i></a>
+                <span class="dribbbletext">Dribbble</span>
+            </div>
+
+            <div id="behance-cont">
+                
+                <a id="behance" href="https://www.behance.net/"><i class="fab fa-behance-square"></i></a>
+                <span class="behancetext">Behance</span>
+            </div>
+
+            <div id="instagram-cont">
+                
+                <a id="instagram" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <span class="instagramtext">Instagram</span>
+            </div>
+
+        </div>
+<!--/Socials Links-->
+        
+<!--Responsive navigation-->
+        <div class="hamburger-menu">
+            <h3>MENU</h3>
+            <div class="ham-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
+        <div class="respo-nav">
+            <a class="link" href="#">Home</a>
+            <a class="link" href="#about">About</a>
+            <a class="link" href="#nosey">Portfolio</a>
+            <a class="link" href="#footers">Contact</a>
+        </div>
+<!--/Responsive navigation-->
+        <script>
+            $(document).ready(function() {
+
+                $('.hamburger-menu').click(function() {
+                    $('.respo-nav').slideToggle(600);
+                    $('.respo-nav').css('display', 'flex');
+
+                });
+
+            });
+        </script>
+
+        <div class="particles-js"></div>
+        <script src="js/particles.js"></script>
+        <script src="js/harlemShake.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/typed.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.js"></script>
+
+<!--Hero content-->
+        <div class="hero-grid">
+            <video autoplay muted loop id="hero-fog">
+                <source src="img/Hero-Fog-dark.mp4" />
+            </video>
+
+            <div id="hero-cent">
+                <img id="hero-logo" src="img/S8hero-outline.svg" alt="S8 logo" class="rellax" data-rellax-percentage="0.5" data-rellax-speed="7">
+
+                <div id="herotype">
+                    <h1 id="type-text">.</h1>
+
+                </div>
+
+                <a id="scroll" href="#about">Curious To Learn More!</a>
+
+                <script>
+                    var typed = new Typed('#type-text', {
+                        strings: [".", "Hello, I'm <span class='blue-text'>Stuart</span> Dalgarno", "Hello, I'm a <span class='blue-text'>Developer</span>", "Hello, I'm a <span class='blue-text'>Designer</span>"],
+                        typeSpeed: 50,
+                        backDelay: 1700,
+                        showCursor: false,
+                        loop: true,
+                    });
+                </script>
+
+            </div>
+        </div>
+<!--/Hero content-->
+
+<!--Sticky Navigation-->
+        <div id="navigation">
+            <nav>
+                <a class="link" href="#">Home</a>
+                <a class="link" href="#about">About</a>
+                <a class="link" href="#nosey">Portfolio</a>
+                <a class="link" href="#footer">Contact</a>
+            </nav>
+
+            <script src="js/jquery.sticky.js"></script>
+            <script>
+                $(document).ready(function() {
+                    $("#navigation").sticky({
+                        topSpacing: 0
+                    });
+                });
+            </script>
+        </div>
+<!--/Sticky Navigation-->
+        
+<!--About-->
+        <section id="about">
+            <h2>who's this guy?</h2>
+            <div id="about-cont">
+
+                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1078.5 476.6">
+                    <defs>
+                        <clipPath id="clip-path" transform="translate(-12.2 -188.8)">
+                            <path id="H" d="M62.5,607.4c4-2.7,8.1-4.9,11.7-8.1,20.6-16.1,40.3-32.7,60.9-47.9,12.1-9,26-16.6,39.5-23.8a52.7,52.7,0,0,1,17.5-6.3c15.7-2.2,26.4,5.9,26.4,22s-3.1,33.2-4.9,49.8l-3.1,26.4c6.7-4.9,11.2-7.2,14.8-10.7,40.8-40.4,81.6-80.8,121.9-121.1,10.3-10.3,20.2-21.1,30.5-31.4,4.9-4.9,9.9-10.3,20.2-8.5-1.8,4.5-2.2,9-4.5,12.5-10.3,13.5-20.2,26.5-30.9,39.9-29.2,36.4-58.3,73.1-92.4,105.4A338.8,338.8,0,0,1,236,633.4a52.5,52.5,0,0,1-35.4,10.3c-17.5-1.3-26-9.4-25.1-26.9s4-31.8,6.7-47.5c1.4-9,4.1-17.5,6.7-29.1-6.2,3.1-10.3,4-13,6.2-14.3,12.6-28.7,24.7-42.6,37.3s-29.1,28.2-44.4,41.2c-8.9,7.6-19.2,14.4-30,18.4-7.6,3.1-16.6,2.2-24.7.9-12.1-1.8-17-8.1-16.5-20.2a178.9,178.9,0,0,1,5.8-35c9.8-36.7,25.5-71.3,43.9-104,34.6-61,72.7-119.3,117.1-173.5,12.5-15.7,27.3-29.6,42.6-42.6a77.2,77.2,0,0,1,29.5-15.3c22.5-5.8,36.4,7.2,32.3,29.6a133.9,133.9,0,0,1-13,39.5c-35.8,68.1-81.6,128.2-141.2,177.5-10.3,8.1-22,14.4-33.2,22-4,3.2-9.9,6.3-11.7,10.8-10.3,22.8-19.7,46.2-29.1,69.5C60.7,603.4,61.6,605.2,62.5,607.4Zm200-336.7c-8.5,8-15.3,13.4-20.2,19.7-10.3,12.1-21.1,24.2-29.6,37.7-30.5,48.4-60.5,96.8-90.6,145.7-.9,1.8-1.3,4-2.7,9,4.5-3.2,6.3-4.1,7.7-5.9,42.1-41.7,81.1-86.1,114.3-135.4a298.4,298.4,0,0,0,18.4-32.7C264.7,298,267,286.4,262.5,270.7Z" fill="none" />
+                        </clipPath>
+                        <clipPath id="clip-path-2" transform="translate(-12.2 -188.8)">
+                            <path id="E" d="M572.3,453.2c-1.8,11.6-8.1,15.7-13,19.7-55.6,47.1-61.4,56.5-93.7,80.7-21.5,17.5-44.8,32.7-68.2,48-17.4,11.6-36.7,17-57.8,17.9a95,95,0,0,1-22.4-3.6c-10.8-3.1-18-11.2-18-22.4s.9-21.5,3.6-31.4c15.3-46.2,43.5-83.8,81.2-114.8,10.8-8.9,23.3-14.8,38.6-13.9,20.1.9,26.4,9.9,17.4,28.3s-20.6,36.8-37.6,49.8a262.7,262.7,0,0,1-35,22.8c-7.6,4.1-11.7,9-13.9,17.1-3.6,12.5-7.2,25.1-1.8,37.6,9,3.2,15.3-.9,20.6-4.5,17.1-9.8,33.7-19.7,49.8-31.3,52.5-38.6,31.8-18.4,84.8-57.4,15.2-11.2,30.9-21.6,46.1-32.3C558,459.9,563.8,457.7,572.3,453.2Zm-148.8-8.1c-14.8,4.9-21.6,17.5-29.2,27.8-16.1,20.6-17.5,23.8-19.7,37.2a101.9,101.9,0,0,0,45.7-43.5C423.9,460.8,427.9,454.5,423.5,445.1Z" fill="none" />
+                        </clipPath>
+                        <clipPath id="clip-path-3" transform="translate(-12.2 -188.8)">
+                            <path id="L" d="M560.2,583.7c12.1,0,22-5.4,30.9-11.3,17.5-12.1,63.3-53.3,79.4-66.3s31.4-27.8,47.1-41.7c5.8-4.5,11.2-10.8,22-6.7-2.7,4.9-4.1,9.8-7.2,12.5-26.5,26.9-81.2,83.4-109,109-21.5,20.1-48.4,30-78.4,28.2-25.6-1.8-38.6-14.3-39.9-39.4-.9-15.3,1.7-30.5,6.7-45.3,12.1-39.5,31.4-75.8,53.3-110.8a975.8,975.8,0,0,1,74-101.3A486.3,486.3,0,0,1,710,242.4c13.9-10.7,28.7-19.7,46.2-23.3,32.2-5.8,47.5,9,41.2,40.8-1.8,9.4-5.4,19.3-10.8,26.9-36.3,56.5-86.5,96-149.7,118.4-13.5,4.5-22.4,11.2-29.6,23.8-17.5,30.9-34.5,61.8-45.7,95.9-3.2,9.9-5,20.2-7.2,30.5S554.8,574.7,560.2,583.7Zm76.7-197.8c40.3-15.7,95.5-57.8,117.9-88.3,9-12.1,15.3-25.1,17.5-39.9.9-7.2,2.7-15.3-3.1-21.6C737.3,248.3,673.7,320,636.9,385.9Z" fill="none" />
+                        </clipPath>
+                        <clipPath id="clip-path-4" transform="translate(-12.2 -188.8)">
+                            <path id="L-2" data-name="L" d="M723.9,583.7c12.1,0,21.9-5.4,30.9-11.3,17.5-12.1,63.2-53.3,79.4-66.3s31.4-27.8,47.1-41.7c5.8-4.5,11.2-10.8,21.9-6.7-2.7,4.9-4,9.8-7.1,12.5-26.5,26.9-81.2,83.4-109,109-21.5,20.1-48.4,30-78.5,28.2-25.5-1.8-38.5-14.3-39.9-39.4-.9-15.3,1.8-30.5,6.7-45.3,12.1-39.5,31.4-75.8,53.4-110.8a961.4,961.4,0,0,1,74-101.3c21.5-25.1,44.8-48,70.8-68.2,13.9-10.7,28.7-19.7,46.2-23.3,32.3-5.8,47.5,9,41.3,40.8-1.8,9.4-5.4,19.3-10.8,26.9-36.3,56.5-86.5,96-149.8,118.4-13.4,4.5-22.4,11.2-29.6,23.8-17.4,30.9-34.5,61.8-45.7,95.9-3.1,9.9-4.9,20.2-7.2,30.5S718.5,574.7,723.9,583.7Zm76.6-197.8c40.4-15.7,95.6-57.8,118-88.3,8.9-12.1,15.2-25.1,17.5-39.9.9-7.2,2.6-15.3-3.2-21.6C901,248.3,837.3,320,800.5,385.9Z" fill="none" />
+                        </clipPath>
+                        <clipPath id="clip-path-5" transform="translate(-12.2 -188.8)">
+                            <path id="O" d="M962.4,497.1c8.1-3.1,14.4-4.9,20.6-7.6,35-15.3,32.3-7.2,62.8-30.1,4.5-3.5,10.8-5.8,16.2-8.5,6.7,6.3,6.2,12.6,1.3,17.5a112.9,112.9,0,0,1-21.5,19.3c-35.9,24.7-36.3,22.4-79.4,35-.9,8.5-1.3,17.5-3.6,26.4-5.8,26-17,50.2-32.3,72.2-13,18.8-31.3,26.9-54.2,23.8s-40.4-17.1-43.5-40.8c-1.4-11.7-1.4-23.8,1.3-35a338.1,338.1,0,0,1,16.6-56c11.2-28.3,29.6-50.7,56.1-66,9.8-5.3,20.2-9.4,31.8-9.4,17,.5,26,7.2,28.3,24.2.9,7.7-.9,15.3-.9,22.9C961.5,488.6,962.4,491.7,962.4,497.1ZM882.6,618.6c4.5-5.4,9.4-9.4,12.6-14.3,9.4-17.1,18.3-34.5,26.4-52,6.7-14.8,11.2-30.1,2.2-45.3,17.1-16.6,19.3-26.9,9.5-47.1-10.3,6.7-17.5,16.1-23.8,25.6-20.2,30.4-30,64.5-35.9,99.5C871.8,596.2,874.5,607,882.6,618.6Z" fill="none" />
+                        </clipPath>
+                    </defs>
+                    <title>Hello</title>
+                    <g id="h_mask">
+                        <g clip-path="url(#clip-path)">
+                            <polyline id="h1" data-aos="h-ani" data-aos-duration="1000" data-aos-anchor="#about" points="5.3 330.7 92.3 311.7 148.3 278.7 216.3 196.7 258.3 122.7 266.3 81.7 244.3 70.7 195.3 107.7 129.3 206.7 87.3 288.7 49.3 352.7 31.3 413.7 34.3 436.7 66.3 429.7 116.3 382.7 157.3 352.7 187.3 337.7 186.3 393.7 185.3 441.7 221.3 429.7 274.3 379.7 404.3 235.7" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="50" />
+                        </g>
+                    </g>
+                    <g id="e_mask">
+                        <g clip-path="url(#clip-path-2)">
+                            <path id="e1" data-aos="h-ani" data-aos-duration="1000" data-aos-anchor="#about" data-aos-delay="500" d="M288.5,599.5l118-156,21-6,8,8v16s-23,32-25,33-51,34-51,34l-24,24-16,31,10,16,35,8,59-37,68-53,93-72" transform="translate(-12.2 -188.8)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="49" />
+                        </g>
+                    </g>
+                    <g id="l_mask">
+                        <g clip-path="url(#clip-path-3)">
+                            <path id="l1" data-aos="h-ani" data-aos-duration="1000" data-aos-anchor="#about" data-aos-delay="1000" d="M559.5,472.5l81-79,110-72s40-57,40-59-9-26-9-26l-13-9-33,16-47,42-61,64s-26,48-29,53-56,110-56,110l-19,61,20,24,46-8,50-44,61-49,41-45" transform="translate(-12.2 -188.8)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="56" />
+                        </g>
+                    </g>
+                    <g id="l_mask2">
+                        <g clip-path="url(#clip-path-4)">
+                            <path id="l2" data-aos="h-ani" data-aos-duration="1000" data-aos-anchor="#about" data-aos-delay="1500" d="M723.5,484.5l50-83,68-23,82-67s25-53,26-55-2-24-2-24l-22-9-52,44-69,72-65,98-45,111,11,49,44-7,51-41,41-34,67-65" transform="translate(-12.2 -188.8)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="60" />
+                        </g>
+                    </g>
+                    <g id="o_mask">
+                        <g clip-path="url(#clip-path-5)">
+                            <path id="o1" data-aos="h-ani" data-aos-duration="1000" data-aos-anchor="#about" data-aos-delay="2000" d="M878.5,452.5s40-4,42-4,21,4,21,4l8,21v28c0,3-2,36-4,44s-21,41-21,43-19,35-20,36-34,11-36,9-16-16-16-19v-46l5-27s14-29,16-32,20-31,20-31l17-14,34,50s89-26,90-28,39-38,39-38" transform="translate(-12.2 -188.8)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="50" />
+                        </g>
+                    </g>
+                </svg>
+
+                <img id="about-img" src="img/About-this-guy.png"  alt="Image of me">
+                <p>I'm Stuart Dalgarno, a web developer and designer based in Aberdeen. I'm currently in college studying year 2 of web design and development. I have a strong interest in computing, however my major focus is in website design and development. I also have skills in video editing, and graphic design.</p>
+
+                <p>I have always been intrigued by how graphics and websites are created, it has therefore been my dream to have a career with developing these digital products.</p>
+
+                <button id="egg" onclick="shake(); this.disabled = true;"><i class="fas fa-info-circle"></i>Free Raspberry Pie</button>
+            </div>
+
+        </section>
+
+        <section id="more-about">
+            <h2>product</h2>
+
+            <div id="feature">
+
+                <div id="aitems">
+                    <div class="aitem">
+                        <img src="img/heart-grad.svg" alt="Heart icon">
+                        <h3>Built With Love</h3>
+                        <p>"You have to love what you do, to give it your best" - Lailah Gifty Akita</p>
+                    </div>
+
+                    <div class="aitem">
+                        <img src="img/puzzle-grad.svg" alt="Puzzle icon">
+                        <h3>Crafted To Your Needs</h3>
+                        <p>"good design adds value faster than it adds costs" - Thomas C. Gale</p>
+                    </div>
+
+                    <div class="aitem">
+                        <img src="img/star-grad.svg" alt="Star icon">
+                        <h3>Customer Relationship</h3>
+                        <p>"People do not care how much you know until they know how much you care" - Teddy Roosevelt</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+<!--/About-->
+        
+<!--Portfolio-->
+        <section id="nosey">
+            <h2>have a nosey</h2>
+            
+            <div id="nosey-container">
+                <div class="row"> 
+                  <div class="column">
+                    <img src="img/Lilly-forest.jpg" alt="Horse in forest">
+                      <img src="img/business-card-front.PNG" alt="Business card front">
+                      <img src="img/business-card-back.PNG" alt="usiness card back">
+                  </div>
+                  <div class="column">
+                      <img src="img/Lilly-laying-down.jpg" alt="Horse lying down">
+                      <img src="http://via.placeholder.com/150x250" alt="">
+                  </div>  
+                  <div class="column">
+                    <img src="img/Lilly-outline.jpg" alt="Horse in outline black and white">
+                    <img src="http://via.placeholder.com/150x150" alt="">
+                  </div>
+                  <div class="column">
+                    <img src="img/S8LogoHorse.png" alt="My S8 horse logo">
+                    <img src="img/S8up.svg" alt="S8 logo with blue bond">
+                  </div>
+                </div>
+            </div>
+
+        </section>
+<!--/Portfolio-->
+
+<!--Footer-->
+        <div id="footer">
+
+            <h3>Don't be shy</h3>
+            <h2 id="sayhi">say hi</h2>
+
+            <div class="contactme">
+
+                <div class="form">
+                    <form action="#" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" cols="25" placeholder="Your Message..."></textarea>
+                        <br />
+                        <button type="submit">Send it<i class="fab fa-telegram-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="arr">All Rights Reserved
+                <script>
+                    document.write(new Date().getFullYear())
+                </script> - Stuart8Designs</div>
+        </div>
+<!--/Footer-->
+        
+    </div>
+<!--Page wrapper-->
+
+    <!--SNOWSTORM CHRISTMAS-->
+    <!--
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Snowstorm/20131208/snowstorm-min.js"></script>
+        <script>
+            snowStorm.followMouse = false;
+        </script>
+-->
+    <!--SNOWSTORM END-->
+<!--Loader fade out-->
+    <script>
+        $(window).load(function() {
+            $('#pre-con').fadeOut('slow');;
+        });
+    </script>
+<!--/Loader fade out-->
+<!--Start the animation on scroll plugin-->
+    <script>
+        AOS.init();
+    </script>
+<!--Start the animation on scroll plugin-->
+
+<!--Declare rellax.js rules-->
+    <script>
+  // Also can pass in optional settings block
+  var rellax = new Rellax('.rellax', {
+    speed: -2,
+  });
+</script>
+<!--Declare rellax.js rules-->
+</body>
+
+</html>
